@@ -7,6 +7,19 @@
   --cornflower: #e7e9fc;
   --white: #ffffff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
 .primary {
   color: var(--navyblue);
 }
@@ -57,6 +70,11 @@ body {
   color: var(--Silver);
   background: var(--white);
 }
+.conteanir {
+  width: 1158px;
+  padding: 15px 0;
+  margin: 0 auto;
+}
 .logo-style {
   font-family: "Raleway";
   font-style: normal;
@@ -85,6 +103,9 @@ body {
   order: 1;
   flex-grow: 0;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 .site-nav-link {
   font-style: normal;
@@ -94,6 +115,12 @@ body {
   letter-spacing: 0.02em;
   font-family: inherit;
   color: var(--navyblue);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  width: 261px;
+  height: 24px;
 }
 .auth-nav-link {
   font-style: normal;
@@ -103,6 +130,66 @@ body {
   letter-spacing: 0.02em;
   font-family: inherit;
   color: var(--slate);
+  flex-direction: row;
+  align-items: flex-start;
+}
+.mailto-nav {
+  flex-direction: row;
+  align-items: flex-start;
+  width: 153px;
+  height: 24px;
+}
+.tel-nav {
+  width: 151px;
+  height: 24px;
+}
+.section-one {
+  width: 1440px;
+  height: 600px;
+}
+.sektion-two {
+  width: 1128px;
+  height: 412px;
+}
+.section-three {
+  width: 1128px;
+  height: 412px;
+}
+.section-four {
+  width: 1440px;
+  height: 732px;
+}
+.feature-one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 264px;
+  height: 104px;
+}
+.feature-two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 264px;
+  height: 104px;
+}
+.feature-three {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 264px;
+  height: 104px;
+}
+.feature-four {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 264px;
+  height: 104px;
 }
 .text-link {
   width: 153px;
@@ -126,6 +213,9 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
+  text-align: center;
+  width: 496px;
+  height: 120px;
 }
 .title-What {
   font-style: normal;
@@ -136,6 +226,11 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navyblue);
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  width: 323px;
+  height: 40px;
 }
 .title-Our {
   font-style: normal;
@@ -146,6 +241,11 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navyblue);
+  text-align: center;
+  width: 162px;
+  height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 .button {
   font-family: inherit;
@@ -190,6 +290,11 @@ body {
   flex-grow: 0;
   font-family: inherit;
   background: var(--iris);
+  align-items: center;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .list-title {
   font-family: inherit;
@@ -199,6 +304,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--navyblue);
+  letter-spacing: 0.02em;
 }
 .list-text {
   font-family: inherit;
@@ -239,7 +345,5 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  display: flex;
 }

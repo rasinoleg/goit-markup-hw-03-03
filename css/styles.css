@@ -45,13 +45,14 @@ cursor {
   background: var(--navyblue);
   padding: 188px 0;
 }
+.section-four {
+  background: var(--cloud);
+}
 .list-markers {
   list-style-type: none;
 }
 .footer {
   background: var(--navyblue);
-  width: 1440px;
-  
 }
 .logo-primary-link {
   color: var(--cloud);
@@ -69,13 +70,19 @@ body {
   padding: 15px 0;
   margin: 0 auto;
 }
+header .conteanir{
+  display: flex;
+  align-items: center;
+  gap: 400px;
+}
+footer .conteanir{
+  padding: 188px 0;
+}
 .site-nav {
   display: flex;
   gap: 40px;
   padding: 24px 0;
-  background: #FFFFFF;
-  border-bottom: 1px solid #E7E9FC;
-
+  background: #ffffff;
 }
 .logo-style {
   font-family: "Raleway";
@@ -90,6 +97,7 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  
 }
 .logo {
   font-family: "Raleway";
@@ -127,8 +135,7 @@ body {
   display: flex;
   text-align: center;
   gap: 40px;
-  align-items: center;
-  justify-content: center;
+  margin-left: auto;
 }
 .text-link {
   font-family: inherit;
@@ -205,9 +212,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin: 120px;
-}
-.section-four {
-  background: var(--cloud);
+  
 }
 .list-title-our-team {
   font-family: inherit;
@@ -346,12 +351,14 @@ body {
   flex-grow: 0;
   width: 264px;
   display: flex;
+  justify-content: center;
 }
 .list-professions {
   display: flex;
   gap: 24px;
   margin: 0px;
   padding-top: 120px;
+  justify-content: center;
 }
 .list-title {
   font-family: inherit;
@@ -382,7 +389,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--cornflower);
   width: 264px;
-  margin: 156px 138px;
+  /* margin: 156px 138px; */
 }
 .logo-footer {
   font-family: inherit;
@@ -392,10 +399,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--cloud);
-  display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
+  flex-direction: row;
   text-decoration: none;
 }
 .logo-primary-link {
@@ -409,4 +413,6 @@ padding: 0px;
   text-transform: uppercase;
   color: var(--iris);
   display: flex;
+  
 }
+

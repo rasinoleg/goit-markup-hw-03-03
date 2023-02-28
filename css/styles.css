@@ -45,15 +45,30 @@ cursor {
   background: var(--navyblue);
   padding: 188px 0;
 }
+.section-two {
+  padding-top: 120px;
+}
+.section-three {
+  padding-top: 120px;
+}
 .section-four {
   background: var(--cloud);
-  width: 1440px;
+  padding-top: 120px;
+  margin-top: 120px;
+  box-sizing: border-box;
+}
+.section-img {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 24px;
 }
 .list-markers {
   list-style-type: none;
 }
 .footer {
   background: var(--navyblue);
+  margin-top: 120px;
 }
 .logo-primary-link {
   color: var(--cloud);
@@ -65,6 +80,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--Silver);
   background: var(--white);
+}
+img {
+  display: block;
 }
 .conteanir {
   width: 1158px;
@@ -126,7 +144,7 @@ footer .conteanir {
 }
 .auth-nav-link {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.02em;
@@ -177,32 +195,10 @@ footer .conteanir {
   margin-top: 120px;
 }
 .photo-one {
-  box-sizing: border-box;
-  background-blend-mode: soft-light, normal;
-  border: 1px solid var(--cornflower);
-  flex: none;
-  order: 0;
   flex-grow: 0;
   display: flex;
-  margin: 72px;
   gap: 24px;
   margin-top: 72px;
-  justify-content: center;
-  max-width: 100%;
-  height: auto;
-}
-.photo-row {
-  background-blend-mode: soft-light, normal;
-  border: 1px solid var(--cornflower);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  display: flex;
-  margin: 72px;
-  gap: 24px;
-  justify-content: center;
-  max-width: 100%;
-  height: auto;
 }
 .title-Our {
   font-style: normal;
@@ -216,7 +212,7 @@ footer .conteanir {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding: 120px;
+  padding: 72px;
 }
 .list-title-our-team {
   font-family: inherit;
@@ -225,14 +221,12 @@ footer .conteanir {
   font-size: 20px;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  color: var(--navyblue);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  text-align: center;
-  background: var(--white);
   display: flex;
   justify-content: center;
+  text-align: center;
+  color: var(--navyblue);
+  background: var(--white);
+  padding: 0px 0px 32px;
 }
 .list-text-our-team {
   font-family: inherit;
@@ -240,26 +234,16 @@ footer .conteanir {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.33;
-  letter-spacing: 0.02em;
   color: var(--slate);
-  text-decoration: none;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   background: var(--white);
-  padding: 0px 0px 120px;
-  display: flex;
-  justify-content: center;
+  padding: 0px 0px 32px;
 }
-.photo-two {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 0px 120px;
-  gap: 32px;
-  border-radius: 0px 0px 4px 4px;
-  margin-top: 72px;
+.professions{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
 }
 .button {
   font-family: inherit;
@@ -269,18 +253,13 @@ footer .conteanir {
   line-height: 24px;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
   color: var(--iris);
   flex: none;
   border: 1px solid var(--cornflower);
-  order: 1;
-  flex-grow: 0;
   background: var(--cloud);
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  gap: 24px;
 }
 .button-filter {
   font-family: inherit;
@@ -289,17 +268,11 @@ footer .conteanir {
   font-size: 16px;
   line-height: 24px;
   display: flex;
-  text-align: center;
   color: var(--iris);
-  flex: none;
-  flex-grow: 0;
-  flex-direction: row;
   padding: 12px 24px;
-  order: 0;
   justify-content: center;
-  gap: 24px;
-  margin: 0px 0px 72px;
   margin-top: 96px;
+  margin-bottom: 72px;
 }
 .visually-hidden {
   position: absolute;
@@ -313,18 +286,17 @@ footer .conteanir {
   overflow: hidden;
 }
 .button-one {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.33;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 16px 32px;
-  gap: 10px;
   color: var(--white);
   background: var(--iris);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  justify-content: center;
-  flex-direction: row;
   margin: 0 auto;
   display: block;
+  border-radius: 4px;
 }
 .list-title-studio {
   font-family: inherit;
@@ -332,13 +304,8 @@ footer .conteanir {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.33;
-  letter-spacing: 0.02em;
   color: var(--navyblue);
   letter-spacing: 0.02em;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  display: flex;
 }
 .list-text-studio {
   font-family: inherit;
@@ -348,18 +315,10 @@ footer .conteanir {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--slate);
-  text-decoration: none;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  display: flex;
-  justify-content: center;
 }
 .list-professions {
   display: flex;
   gap: 24px;
-  margin-top: 120px;
-  justify-content: center;
 }
 .list-title {
   font-family: inherit;
@@ -370,17 +329,19 @@ footer .conteanir {
   letter-spacing: 0.02em;
   color: var(--navyblue);
   letter-spacing: 0.02em;
+  flex-basis: calc((100% - 48px) / 3);
 }
 .list-text {
   font-family: inherit;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--slate);
   text-decoration: none;
   padding: 0px 0px 48px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 .text-footer {
   font-family: inherit;
@@ -404,14 +365,12 @@ footer .conteanir {
   text-decoration: none;
 }
 .logo-primary-link {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
-  display: flex;
 }

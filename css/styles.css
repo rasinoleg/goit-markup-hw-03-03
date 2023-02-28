@@ -43,32 +43,50 @@ cursor {
 }
 .section-one {
   background: var(--navyblue);
-  padding: 188px 0;
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 .section-two {
   padding-top: 120px;
+  
 }
 .section-three {
-  padding-top: 120px;
+  padding-bottom: 72px;
 }
 .section-four {
   background: var(--cloud);
-  padding-top: 120px;
-  margin-top: 120px;
-  box-sizing: border-box;
+  padding-top: 72px;
 }
 .section-img {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  margin-top: 24px;
+  margin-top: 72px;
+  padding-bottom: 120px;
+}
+.section-portfolio{
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.text{
+  background: #FFFFFF;
+border: 1px solid #E7E9FC;
+padding-bottom: 32px;
+}
+.list-professions {
+  display: flex;
+  gap: 24px;
+}
+.professions{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
 }
 .list-markers {
   list-style-type: none;
 }
 .footer {
   background: var(--navyblue);
-  margin-top: 120px;
 }
 .logo-primary-link {
   color: var(--cloud);
@@ -93,10 +111,11 @@ header .conteanir {
   display: flex;
   align-items: center;
   gap: 350px;
+  border-bottom: 1px solid #E7E9FC;
 }
 footer .conteanir {
-  padding: 188px;
-  margin-right: 156px;
+  padding-top: 138px;
+  padding-bottom: 100px;
 }
 .site-nav {
   display: flex;
@@ -131,27 +150,18 @@ footer .conteanir {
   text-decoration: none;
 }
 .site-nav-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.33;
-  letter-spacing: 0.02em;
-  font-family: inherit;
-  color: var(--navyblue);
   display: flex;
   text-align: center;
   gap: 40px;
 }
 .auth-nav-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.33;
-  letter-spacing: 0.02em;
-  font-family: inherit;
-  color: var(--slate);
   display: flex;
-  text-align: center;
   gap: 40px;
   margin-left: auto;
 }
@@ -166,23 +176,17 @@ footer .conteanir {
   text-decoration: none;
 }
 .list-title-one {
-  font-family: inherit;
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
   text-align: center;
-  justify-content: center;
   width: 496px;
-  display: flex;
   margin: 0px auto;
   margin-bottom: 48px;
 }
 .title-What {
-  font-style: normal;
-  font-family: inherit;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -190,8 +194,6 @@ footer .conteanir {
   text-transform: capitalize;
   color: var(--navyblue);
   text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
   margin-top: 120px;
 }
 .photo-one {
@@ -201,36 +203,24 @@ footer .conteanir {
   margin-top: 72px;
 }
 .title-Our {
-  font-style: normal;
-  font-family: inherit;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--navyblue);
   text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  padding: 72px;
 }
 .list-title-our-team {
-  font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: var(--navyblue);
   background: var(--white);
-  padding: 0px 0px 32px;
+  padding-top: 32px;
 }
 .list-text-our-team {
-  font-family: inherit;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.33;
@@ -239,11 +229,6 @@ footer .conteanir {
   justify-content: center;
   background: var(--white);
   padding: 0px 0px 32px;
-}
-.professions{
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
 }
 .button {
   font-family: inherit;
@@ -269,10 +254,9 @@ border-radius: 0px 0px 4px 4px;
   line-height: 24px;
   display: flex;
   color: var(--iris);
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
   justify-content: center;
-  margin-top: 96px;
-  margin-bottom: 72px;
+  gap: 24px;
 }
 .visually-hidden {
   position: absolute;
@@ -289,18 +273,14 @@ border-radius: 0px 0px 4px 4px;
   font-family: "Roboto";
   font-size: 16px;
   line-height: 1.33;
-  display: flex;
   padding: 16px 32px;
   color: var(--white);
   background: var(--iris);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   display: block;
   border-radius: 4px;
 }
 .list-title-studio {
-  font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.33;
@@ -308,17 +288,11 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.02em;
 }
 .list-text-studio {
-  font-family: inherit;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--slate);
-}
-.list-professions {
-  display: flex;
-  gap: 24px;
 }
 .list-title {
   font-family: inherit;
@@ -330,6 +304,8 @@ border-radius: 0px 0px 4px 4px;
   color: var(--navyblue);
   letter-spacing: 0.02em;
   flex-basis: calc((100% - 48px) / 3);
+  padding-top: 32px;
+  background: var(--white);
 }
 .list-text {
   font-family: inherit;
@@ -340,14 +316,12 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.02em;
   color: var(--slate);
   text-decoration: none;
-  padding: 0px 0px 48px;
   flex-basis: calc((100% - 48px) / 3);
+  margin-top: 8px;
+  background: var(--white);
+display: block;
 }
 .text-footer {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--cornflower);

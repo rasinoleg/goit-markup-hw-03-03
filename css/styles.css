@@ -37,25 +37,28 @@ cursor {
 .auth-nav-link :focus {
   color: var(--iris);
 }
-.button:hover,
-.button:focus {
-  color: var(--navyblue);
+.button-filter :hover,
+.button-filter :focus {
+  color: var(--white);
+  background: #404bbf;
 }
 .section-one {
   background: var(--navyblue);
   padding-top: 188px;
   padding-bottom: 292px;
 }
+.address {
+  margin-left: auto;
+}
 .section-two {
   padding-top: 120px;
-  
+  padding-bottom: 120px;
 }
 .section-three {
-  padding-bottom: 72px;
+  padding-bottom: 120px;
 }
 .section-four {
   background: var(--cloud);
-  padding-top: 72px;
 }
 .section-img {
   display: flex;
@@ -64,29 +67,34 @@ cursor {
   margin-top: 72px;
   padding-bottom: 120px;
 }
-.section-portfolio{
+.section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.text{
-  background: #FFFFFF;
-border: 1px solid #E7E9FC;
-padding-bottom: 32px;
+.text {
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: none;
+  text-decoration: none;
 }
 .list-professions {
   display: flex;
   gap: 24px;
 }
-.professions{
+.professions {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .list-markers {
   list-style-type: none;
 }
 .footer {
   background: var(--navyblue);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .logo-primary-link {
   color: var(--cloud);
@@ -110,11 +118,10 @@ img {
 header .conteanir {
   display: flex;
   align-items: center;
-  gap: 350px;
-  border-bottom: 1px solid #E7E9FC;
+  border-bottom: 1px solid #e7e9fc;
 }
 footer .conteanir {
-  padding-top: 138px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 .site-nav {
@@ -163,7 +170,6 @@ footer .conteanir {
   line-height: 1.33;
   display: flex;
   gap: 40px;
-  margin-left: auto;
 }
 .text-link {
   font-family: inherit;
@@ -194,7 +200,7 @@ footer .conteanir {
   text-transform: capitalize;
   color: var(--navyblue);
   text-align: center;
-  margin-top: 120px;
+  margin-bottom: 72px;
 }
 .photo-one {
   flex-grow: 0;
@@ -230,33 +236,34 @@ footer .conteanir {
   background: var(--white);
   padding: 0px 0px 32px;
 }
-.button {
-  font-family: inherit;
+.button-filter {
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  gap: 24px;
+}
+.button-text {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   display: flex;
   align-items: center;
+  text-align: center;
   letter-spacing: 0.04em;
-  color: var(--iris);
+  color: #4d5ae5;
   flex: none;
-  border: 1px solid var(--cornflower);
-  background: var(--cloud);
-  display: flex;
-  align-items: flex-start;
-}
-.button-filter {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  color: var(--iris);
-  /* padding: 12px 24px; */
-  justify-content: center;
-  gap: 24px;
+  order: 0;
+  flex-grow: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -271,6 +278,7 @@ footer .conteanir {
 }
 .button-one {
   font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.33;
   padding: 16px 32px;
@@ -279,6 +287,7 @@ footer .conteanir {
   margin: 0 auto;
   display: block;
   border-radius: 4px;
+  border: none;
 }
 .list-title-studio {
   font-weight: 500;
@@ -317,9 +326,8 @@ footer .conteanir {
   color: var(--slate);
   text-decoration: none;
   flex-basis: calc((100% - 48px) / 3);
-  margin-top: 8px;
   background: var(--white);
-display: block;
+  display: block;
 }
 .text-footer {
   line-height: 1.33;

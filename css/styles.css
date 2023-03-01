@@ -37,11 +37,18 @@ cursor {
 .auth-nav-link :focus {
   color: var(--iris);
 }
-.button-filter :hover,
-.button-filter :focus {
-  color: var(--white);
-  background: #404bbf;
+.button-text:hover,
+.button-text:focus {
+ color: var(--white);
+ background: #404BBF;
+ border-color: #404BBF;
 }
+/* .button-one:hover
+.button-one:focus{
+  color: var(--white);
+ background: #404BBF;
+ border-color: #404BBF;
+}  */
 .section-one {
   background: var(--navyblue);
   padding-top: 188px;
@@ -65,7 +72,7 @@ cursor {
   gap: 24px;
   flex-wrap: wrap;
   margin-top: 72px;
-  padding-bottom: 120px;
+  
 }
 .section-portfolio {
   padding-top: 96px;
@@ -77,7 +84,7 @@ cursor {
   padding-top: 32px;
   padding-bottom: 32px;
   border-top: none;
-  text-decoration: none;
+  margin-bottom: 8px;
 }
 .list-professions {
   display: flex;
@@ -260,10 +267,11 @@ footer .conteanir {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  color: #4D5AE5;
+  background: #F4F4FD;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #E7E9FC;
 }
 .visually-hidden {
   position: absolute;
@@ -304,29 +312,34 @@ footer .conteanir {
   color: var(--slate);
 }
 .list-title {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.33;
-  letter-spacing: 0.02em;
-  color: var(--navyblue);
-  letter-spacing: 0.02em;
-  flex-basis: calc((100% - 48px) / 3);
-  padding-top: 32px;
-  background: var(--white);
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #2E2F42;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-bottom: 8px;
 }
 .list-text {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.33;
-  letter-spacing: 0.02em;
-  color: var(--slate);
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #434455;
+flex: none;
+order: 1;
+flex-grow: 0;
+text-decoration: none;
+}
+.card-link{
   text-decoration: none;
-  flex-basis: calc((100% - 48px) / 3);
-  background: var(--white);
+  margin-bottom: 48px;
   display: block;
 }
 .text-footer {
